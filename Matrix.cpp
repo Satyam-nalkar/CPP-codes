@@ -267,6 +267,57 @@ bool Matrix::isDiagonallyDominant() {
     return true;
 }
 
+
+
+bool Matrix::makeDiagonallyDominant(Matrix &B) {
+    for (int i = 0; i < rows; i++) {
+        double rowSum = 0;
+
+        // Sum of non-diagonal elements
+        for (int j = 0; j < cols; j++) {
+            if (i != j) {
+                rowSum += abs(data[i][j]);
+            }
+        }
+
+        // Check if current diagonal element is already dominant
+        if (abs(data[i][i]) < rowSum) {
+            // Try to find a better row to swap
+            int maxRow = i;
+            double maxVal = abs(data[i][i]);
+
+            for (int k = i + 1; k < rows; k++) {
+                double diagVal = abs(data[k][i]);
+                double sum = 0;
+
+                for (int j = 0; j < cols; j++) {
+                    if (j != i) sum += abs(data[k][j]);
+                }
+
+                // Check if the current row is a better candidate for swapping
+                if (diagVal >= sum && diagVal > maxVal) {
+                    maxVal = diagVal;
+                    maxRow = k;
+                }
+            }
+
+            
+            if (maxRow != i) {
+                swap(data[i], data[maxRow]);
+                swap(B.data[i], B.data[maxRow]);
+            } else {
+                return false;  
+            }
+        }
+    }
+
+    return isDiagonallyDominant();
+}
+
+
+
+
+
 //Gauss Seidal
 int Matrix::gaussSeidel(Matrix &B, double* X, double tolerance) {
     if (rows != cols) {
