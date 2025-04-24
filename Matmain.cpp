@@ -123,6 +123,14 @@ int main() {
         return 1;
     }
     
+    if (!A.isDiagonallyDominant()) {
+        if (A.makeDiagonallyDominant(B)) {
+            cout << "Matrix made diagonally dominant by row swaps.\n";
+        } else {
+            cout << "Failed to make matrix diagonally dominant.\n";
+        }
+    }
+
     double *X = new double[A.getRows()];
     // int maxIterations;
     double tolerance;
