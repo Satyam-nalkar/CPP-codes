@@ -41,6 +41,15 @@ void Matrix::inputFromFile(const string &filename) {
 }
 
 //  Constructor
+
+Matrix::Matrix() {
+    rows = 0;
+    cols = 0;
+    data = nullptr;
+}
+
+
+
 Matrix::Matrix(int r, int c) {
     rows = r;
     cols = c;
@@ -51,6 +60,9 @@ Matrix::Matrix(int r, int c) {
 }
 
 //  Copy Constructor
+
+
+
 Matrix::Matrix(const Matrix &other) {
     rows = other.rows;
     cols = other.cols;
@@ -436,3 +448,53 @@ int Matrix::gaussJacobi(Matrix &B, double* X, double tolerance) {
 
 
 
+// Lagrange Interpolation
+
+
+double Matrix::lagrangeInterpolationFromFile(const string& filename) {
+    ifstream infile(filename);
+    if (!infile) {
+        cout << "Error opening file!\n";
+        return -1.0;
+    }
+
+    int n;
+    infile >> n;
+
+    double* x = new double[n];
+    double* y = new double[n];
+
+    for (int i = 0; i < n; i++) infile >> x[i];
+    for (int i = 0; i < n; i++) infile >> y[i];
+
+    double xp;
+    infile >> xp;
+    infile.close();
+
+    double result6 = lagrangeInterpolation(x, y, n, xp);
+    cout << "Interpolated value at x = " << result6 << endl;  // Print result
+
+
+
+    delete[] x;
+    delete[] y;
+
+    return result6;
+}
+
+
+double Matrix::lagrangeInterpolation(double x[], double y[], int n, double xp) {
+    double yp = 0;
+
+    for (int i = 0; i < n; i++) {
+        double term = y[i];
+        for (int j = 0; j < n; j++) {
+            if (j != i) {
+                term *= (xp - x[j]) / (x[i] - x[j]);
+            }  
+        }
+        yp += term;
+    }
+
+    return yp;
+}
