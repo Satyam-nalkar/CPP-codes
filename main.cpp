@@ -1,14 +1,9 @@
+#include "symmetric.hpp"
 #include<iostream>
-#include "factor.hpp"
+using namespace std;
 
-int main() {
-    double a,b,c;
-    cin >> a >> b >> c;
-
-    QuadraticFactorizer q(a,b,c);
-    q.computeRoots();
-    q.printFactorizedForm();
-    cout << endl;
+int main(){
+    SymmetricDateFinder finder;
+    finder.printSymmetricDates();
     return 0;
-
 }
