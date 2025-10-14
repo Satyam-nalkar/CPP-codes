@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     // Declare and initialize an array of integers
-    int numbers[5] = {10, 20, 30, 40, 50};
+    int numbers[7] = {10, 20, 30, 40, 50, 60, 70};
 
     // Access and display array elements
     cout << "Array elements: ";
