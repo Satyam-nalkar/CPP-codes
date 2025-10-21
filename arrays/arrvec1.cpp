@@ -14,13 +14,15 @@ int main(){
     // cout << "size = " << vec.size() << endl;
 
   vector<int>vec;
- 
+
+  
   vec.push_back(25);
   vec.push_back(35);
   vec.push_back(45);
   vec.push_back(55);
   vec.push_back(65);
   vec.push_back(75);
+  vec.push_back(85);
   cout << "after push back size = " << vec.size() << endl;
   vec.pop_back();
     // cout << val << endl;
