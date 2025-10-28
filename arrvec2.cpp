@@ -19,6 +19,8 @@ int main(){
     vec.push_back(12);
     vec.push_back(13);
     vec.push_back(14);
+    vec.push_back(15);
+    vec.push_back(16);
   cout << vec.size() << endl;
   cout << vec.capacity() << endl; 
     return 0;
