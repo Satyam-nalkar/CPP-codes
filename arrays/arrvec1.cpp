@@ -33,6 +33,6 @@ int main(){
     cout << vec.front() << endl;
     cout << vec.back() << endl;
   
-     cout << vec.at(1) << endl;
+     cout << vec.at(0) << endl;
     return 0;
 }
