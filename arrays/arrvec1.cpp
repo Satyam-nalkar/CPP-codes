@@ -25,6 +25,8 @@ int main(){
   vec.push_back(85);
   vec.push_back(95);
   vec.push_back(105);
+  vec.push_back(115);
+  vec.push_back(120);
   cout << "after push back size = " << vec.size() << endl;
   vec.pop_back();
     // cout << val << endl;
