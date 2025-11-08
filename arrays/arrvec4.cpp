@@ -9,6 +9,7 @@ int main()
     // Accessing using operator[]
     cout << "Element at index 2 using []: " << v[2] << endl;
     cout << "Element at index 3 using []: " << v[3] << endl;
+    cout << "Element at index 1 using []: " << v[1] << endl;
     
     // Accessing using at()
     cout << "Element at index 3 using at(): " << v.at(3) << endl;
