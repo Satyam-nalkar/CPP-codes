@@ -6,6 +6,8 @@ int main() {
     vector<char> v = {'a', 'f', 'd'};
   
   	// Inserting 'z' at the back
+  	v.push_back('x');
+  	v.push_back('y');
   	v.push_back('z');
   
   	// Inserting 'c' at index 1
