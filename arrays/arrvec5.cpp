@@ -6,14 +6,18 @@ int main() {
     vector<char> v = {'a', 'f', 'd'};
   
   	// Inserting 'z' at the back
-  	v.push_back('x');
-  	v.push_back('y');
-  	v.push_back('z');
   	v.push_back('p');
   	v.push_back('q');
   	v.push_back('r');
   	v.push_back('s');
   	v.push_back('t');
+  	v.push_back('u');
+  	v.push_back('v');
+  	v.push_back('w');
+	v.push_back('x');
+  	v.push_back('y');
+  	v.push_back('z');
+
   
   	// Inserting 'c' at index 1
   	v.insert(v.begin() + 1, 'c');
