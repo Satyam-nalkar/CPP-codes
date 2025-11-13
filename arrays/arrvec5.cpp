@@ -3,9 +3,12 @@
 using namespace std;
 
 int main() {
-    vector<char> v = {'a', 'f', 'd'};
+    vector<char> v = {'a','b', 'f', 'd'};
   
   	// Inserting 'z' at the back
+  	v.push_back('m');
+  	v.push_back('n');
+  	v.push_back('o');
   	v.push_back('p');
   	v.push_back('q');
   	v.push_back('r');
