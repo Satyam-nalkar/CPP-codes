@@ -6,7 +6,8 @@ int main() {
     vector<char> v = {'a','b', 'f', 'd'};
   
   	// Inserting 'z' at the back
-  	v.push_back('fd');
+  	v.push_back('c');
+  	v.push_back('d');
   	v.push_back('e');
   	v.push_back('f');
   	v.push_back('g');
