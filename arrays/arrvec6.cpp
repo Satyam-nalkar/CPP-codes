@@ -3,8 +3,13 @@
 using namespace std;
 int main() {
     
-    vector<int> v1;
+    vector<int> v1(3, 5);
     
+    for (int x : v1) {
+        cout << x << " ";
+    }
+    
+    cout << endl;
     // Declares vector with given size
     // and fills it with a value
     vector<int> v2(3, 5);  
