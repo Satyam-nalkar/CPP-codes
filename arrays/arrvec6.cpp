@@ -12,10 +12,10 @@ int main() {
     cout << endl;
     // Declares vector with given size
     // and fills it with a value
-    vector<int> v2(3, 5);  
+    vector<int> v2(5);  
     
 
-    for (int x : v2) {
+    for (int x = 1 ; x <= v2.size(); x++) {
         cout << x << " ";
     }
     
@@ -29,6 +29,14 @@ int main() {
     for (int x : v3) {
         cout << x << " ";
     }
-    
+
+    cout << endl;
+
+    vector<int> v4(3, 6);
+
+    for (int x : v4) {
+        cout << x << " ";
+    }
+
     return 0;
 }
