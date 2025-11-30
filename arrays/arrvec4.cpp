@@ -19,11 +19,13 @@ int main()
     cout << "Element at index 11 using []: " << v[11] << endl;
     cout << "Element at index 12 using []: " << v[12] << endl;
     cout << "Element at index 13 using []: " << v[13] << endl;
-    cout << "Element at index 13 using []: " << v[14] << endl;
+    cout << "Element at index 14 using []: " << v[14] << endl;
+    cout << "Element at index 15 using []: " << v[15] << endl;
     // Accessing using at()
     cout << "Element at index 3 using at(): " << v.at(3) << endl;
     cout << "Element at index 1 using at(): " << v.at(1) << endl;
     cout << "Element at index 2 using at(): " << v.at(2) << endl;
+    cout << "Element at index 4 using at(): " << v.at(4) << endl;
     
     return 0;
 }
