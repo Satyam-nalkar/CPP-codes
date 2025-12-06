@@ -33,6 +33,7 @@ int main()
     cout << "Element at index 2 using at(): " << v.at(2) << endl;
     cout << "Element at index 4 using at(): " << v.at(4) << endl;
     cout << "Element at index 5 using at(): " << v.at(5) << endl;
+    cout << "Element at index 6 using at(): " << v.at(6) << endl;
     
     return 0;
 }
