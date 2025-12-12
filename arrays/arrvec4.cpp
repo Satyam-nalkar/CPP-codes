@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    vector<int> v = {10, 20, 30, 40,50,60,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
+    vector<int> v = {10, 20, 30, 40,50,60,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22};
     
     // Accessing using operator[]
     cout << "Element at index 2 using []: " << v[2] << endl;
@@ -39,6 +39,7 @@ int main()
     cout << "Element at index 4 using at(): " << v.at(4) << endl;
     cout << "Element at index 5 using at(): " << v.at(5) << endl;
     cout << "Element at index 6 using at(): " << v.at(6) << endl;
+    cout << "Element at index 7 using at(): " << v.at(7) << endl;
     
     return 0;
 }
