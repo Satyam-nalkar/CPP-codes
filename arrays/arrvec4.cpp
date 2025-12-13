@@ -32,6 +32,7 @@ int main()
     cout << "Element at index 23 using []: " << v[23] << endl;
     cout << "Element at index 24 using []: " << v[24] << endl;
     cout << "Element at index 25 using []: " << v[25] << endl;
+    cout << "Element at index 26 using []: " << v[26] << endl;
     // Accessing using at()
     cout << "Element at index 3 using at(): " << v.at(3) << endl;
     cout << "Element at index 1 using at(): " << v.at(1) << endl;
@@ -40,6 +41,7 @@ int main()
     cout << "Element at index 5 using at(): " << v.at(5) << endl;
     cout << "Element at index 6 using at(): " << v.at(6) << endl;
     cout << "Element at index 7 using at(): " << v.at(7) << endl;
+    cout << "Element at index 8 using at(): " << v.at(8) << endl;
     
     return 0;
 }
